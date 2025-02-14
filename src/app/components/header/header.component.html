@@ -1,1 +1,18 @@
-<p>header works!</p>
+<header class=" header">
+    <div class="logo">
+        <span> Fênix Cursos </span>
+    </div>
+
+    <div class="search-bar">
+        <input type="text"[(ngModel)]="searchQuery" placeholder="O que você quer aprender?">
+        <button  class="button1" (click)="search()">🔍</button>
+    </div>
+    
+
+    <nav class="menu">
+        <a href="#" >Home</a>
+        <a href="#" >Cursos</a>
+        <a href="#" >Sobre Nós</a>
+        
+    </nav>
+</header>

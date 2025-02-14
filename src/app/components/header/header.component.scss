@@ -1,0 +1,88 @@
+.header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #0d1117;
+padding: 15 px 30 px;
+color: white;
+font-family: Arial, sans-serif;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #161b22;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input{
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 200px;
+    outline: none;
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu {
+    display: flex;
+    align-items: left;
+    gap: 20px;
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+}
+.button {
+    background-color: #00ffbf;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+
+    &:hover {
+        opacity: 0.8;
+      }
+    }
+ 
+//Responsivo
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .search-bar{
+        width: 100%;
+    }
+    .search-bar input {
+        width: 100%;
+      }
+    }
