@@ -1,1 +1,8 @@
-<p>course-detail works!</p>
+<div class="course-detail">
+    <button (click)="goBack()">Voltar</button>
+    <h2>{{ course.title }}</h2>
+    <img [src]="course.image" alt="{{ course.title }}">
+    <p>{{ course.description }}</p>
+    <span>Duração: {{ course.duration }} horas</span>
+  </div>
+  

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Course } from './course.model';
 import { Observable, of } from 'rxjs';
+import { url } from 'inspector';
 
 @Injectable({
   providedIn: 'root'
@@ -9,10 +10,10 @@ export class CourseService {
   private courses: Course[] = [
     {
       id: 1,
-      title: 'Angular para Iniciantes',
+      title: 'Desenvolvedor Front-End',
       description: 'Aprenda Angular do zero.',
-      category: 'Front-End',
-      imageUrl: 'assets/angular.png'
+      category: 'Programação',
+      imageUrl: '',
     },
     {
       id: 2,

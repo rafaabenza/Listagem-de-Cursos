@@ -1,7 +1,10 @@
-<div *ngFor="let course of courses">
+<div class="course-list">
+  <h2>Cursos</h2>
+  <div *ngFor="let course of courses" class="course-card">
     <h3>{{ course.name }}</h3>
+    <p><strong>Categoria:</strong> {{ course.category }}</p>
+    <p><strong>Duração:</strong> {{ course.duration }}</p>
     <p>{{ course.description }}</p>
-    <p>Duration: {{ course.duration }}</p>
-    <button (click)="goToDetail(course.id)">Ver detalhes</button>
+    <button (click)="goToDetail(course.id)">Ver Detalhes</button>
   </div>
-  
+</div>
